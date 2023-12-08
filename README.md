@@ -1,6 +1,6 @@
-# Vue 3 + Vite
+# PrimeVue Tailwind Preset Template
 
-This template should help get you get started with developing a custom preset for PrimeVue unstyled mode using Tailwind CSS.
+This template should help get you get started with developing a custom preset for PrimeVue unstyled mode using Tailwind CSS. The template provides a basic preset, an extended semantic color palette as Tailwind extensions, dark mode switch and a color palette configurator.
 
 ## Custom Preset
 
@@ -47,6 +47,50 @@ export default {
 };
 ```
 
+## tailwind.config.js
+
+Please add documentation if your preset uses extended Tailwind utilities, for example this preset template adds semantic colors named `primary` and `surface` so that color palette can easily be changed with CSS variables.
+
+**tailwind.config.js.**
+
+```js
+/** @type {import('tailwindcss').Config} */
+export default {
+    // ...
+    theme: {
+        extend: {
+            colors: {
+                "primary-50": "rgb(var(--primary-50))",
+                "primary-100": "rgb(var(--primary-100))",
+                "primary-200": "rgb(var(--primary-200))",
+                "primary-300": "rgb(var(--primary-300))",
+                "primary-400": "rgb(var(--primary-400))",
+                "primary-500": "rgb(var(--primary-500))",
+                "primary-600": "rgb(var(--primary-600))",
+                "primary-700": "rgb(var(--primary-700))",
+                "primary-800": "rgb(var(--primary-800))",
+                "primary-900": "rgb(var(--primary-900))",
+                "primary-950": "rgb(var(--primary-950))",
+
+                "surface-0": "rgb(var(--surface-0))",
+                "surface-50": "rgb(var(--surface-50))",
+                "surface-100": "rgb(var(--surface-100))",
+                "surface-200": "rgb(var(--surface-200))",
+                "surface-300": "rgb(var(--surface-300))",
+                "surface-400": "rgb(var(--surface-400))",
+                "surface-500": "rgb(var(--surface-500))",
+                "surface-600": "rgb(var(--surface-600))",
+                "surface-700": "rgb(var(--surface-700))",
+                "surface-800": "rgb(var(--surface-800))",
+                "surface-900": "rgb(var(--surface-900))",
+                "surface-950": "rgb(var(--surface-950))",
+            },
+        },
+    },
+    // ...
+};
+```
+
 ## Submit to Online Gallery
 
-Once you are happy with your preset, please consider sharing it with the PrimeVue community at the [preset gallery](https://tailwind.primevue.org/gallery) using the [new preset form](https://github.com/primefaces/primevue-tailwind-preset-template/issues/new).
+Once you are happy with your preset, please consider sharing it with the PrimeVue community at the [preset gallery](https://tailwind.primevue.org/gallery) using the [new preset form](https://github.com/primefaces/primevue-tailwind/issues/new?assignees=&labels=Status%3A+Needs+Triage&projects=&template=new_preset.yml&title=Preset+Name).
