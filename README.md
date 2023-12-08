@@ -54,10 +54,8 @@ export default {
 
 Please add documentation if your preset uses extended Tailwind utilities, for example this preset template adds semantic colors named `primary` and `surface` so that color palette can easily be changed with CSS variables. These classes can be used as;
 
-```html
-export default { 
-    root: `bg-primary-100 hover:bg-primary-200 dark:bg-primary-800 border border-surface-200 text-surface-900` 
-};
+```
+bg-primary-100 hover:bg-primary-200 dark:bg-primary-800 border border-surface-200 text-surface-900
 ```
 
 ### tailwind.config.js
