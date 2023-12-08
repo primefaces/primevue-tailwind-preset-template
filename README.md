@@ -2,6 +2,8 @@
 
 This template should help get you get started with developing a custom preset for PrimeVue unstyled mode using Tailwind CSS. The template provides a basic preset, an extended semantic color palette as Tailwind extensions, dark mode switch and a color palette configurator.
 
+Once you are happy with your preset, please consider sharing it with the PrimeVue community at the [preset gallery](https://tailwind.primevue.org/gallery) using the [new preset form](https://github.com/primefaces/primevue-tailwind/issues/new?assignees=&labels=Status%3A+Needs+Triage&projects=&template=new_preset.yml&title=Preset+Name).
+
 ## Custom Preset
 
 A custom preset is configured at `src/mypreset` folder, this preset only contains an InputText component. View the [official presets](https://github.com/primefaces/primevue-tailwind/tree/main/presets) to use as your base reference.
@@ -97,7 +99,3 @@ export default {
     // ...
 };
 ```
-
-## Submit to Online Gallery
-
-Once you are happy with your preset, please consider sharing it with the PrimeVue community at the [preset gallery](https://tailwind.primevue.org/gallery) using the [new preset form](https://github.com/primefaces/primevue-tailwind/issues/new?assignees=&labels=Status%3A+Needs+Triage&projects=&template=new_preset.yml&title=Preset+Name).
