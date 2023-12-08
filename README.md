@@ -14,7 +14,8 @@ mypreset/
     index.js
 ```
 
-**inputtext/index.js**
+### inputtext/index.js
+
 Style preset of a component should be placed in `index.js` file inside its own folder.
 
 ```js
@@ -23,7 +24,8 @@ export default {
 };
 ```
 
-**global.js**
+### global.js
+
 The global.js file can be used to add custom global styles like new animations with keyframes.
 
 ```js
@@ -34,7 +36,8 @@ export default {
 };
 ```
 
-**index.js**
+### index.js
+
 The `index.js` is the main entry point of the preset that combines all component styles and exports them.
 
 ```js
@@ -47,17 +50,17 @@ export default {
 };
 ```
 
-## tailwind.config.js
+### tailwind.config.js
 
 Please add documentation if your preset uses extended Tailwind utilities, for example this preset template adds semantic colors named `primary` and `surface` so that color palette can easily be changed with CSS variables. These classes can be used as;
 
 ```html
-export default {
-    root: `bg-primary-100 hover:bg-primary-200 dark:bg-primary-800 border border-surface-200 text-surface-900`
+export default { 
+    root: `bg-primary-100 hover:bg-primary-200 dark:bg-primary-800 border border-surface-200 text-surface-900` 
 };
 ```
 
-**tailwind.config.js**
+### tailwind.config.js
 
 ```js
 /** @type {import('tailwindcss').Config} */
