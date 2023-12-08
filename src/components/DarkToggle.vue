@@ -1,8 +1,8 @@
 <template>
     <button type="button"
-        class="fixed top-8 right-8 h-8 w-8 rounded-full border inline-flex justify-center items-center bg-white dark:bg-gray-800 border-gray-400 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700"
+        class="h-8 w-8 rounded-full inline-flex justify-center items-center bg-gray-100 dark:bg-surface-800 hover:bg-gray-200 dark:hover:bg-surface-700 text-surface-700 hover:text-surface-900 dark:text-surface-500 dark:hover:text-surface-300 transition-colors duration-200"
         @click="toggleDarkMode">
-        <i class="pi toggle-icon text-gray-700 dark:text-gray-300" />
+        <i class="pi toggle-icon" />
     </button>
 </template>
 
